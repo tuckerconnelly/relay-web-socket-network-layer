@@ -1,7 +1,7 @@
-export default wsrr => ({
+export default ops => ({
   // TODO Handle files
   sendMutation: async function sendMutation(request) {
-    const result = await wsrr.request('query', {
+    const result = await ops.request('query', {
       query: request.getQueryString(),
       variables: request.getVariables(),
     })
@@ -9,7 +9,7 @@ export default wsrr => ({
     request.resolve({ response: result.data })
   },
   sendQueries: async function sendQueries(requests) {
-    const results = await wsrr.request('query', {
+    const results = await ops.request('query', {
       queries: requests.map(request => request.getQueryString()),
     })
 

@@ -31,9 +31,7 @@
     "eslint-plugin-react": "^3.14.0"
   },
   "peerDependencies": {
-    "ws-request-response": "^0.0.1"
+    "ops": "tuckerconnelly/ops"
   },
-  "dependencies": {
-    "relay-enhance-network-layer": "^0.0.1"
-  }
+  "dependencies": {}
 }
