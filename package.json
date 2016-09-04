@@ -1,6 +1,6 @@
 {
   "name": "relay-web-socket-network-layer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A WebSocket network layer for Relay.",
   "main": "lib/index.js",
   "scripts": {
